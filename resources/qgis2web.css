@@ -31,6 +31,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
 	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+		width: 400px;
 }
 
 .ol-popup:after, .ol-popup:before {
