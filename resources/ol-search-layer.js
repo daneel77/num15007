@@ -55,9 +55,9 @@ class SearchLayer extends ol.control.Control {
     const selVia = document.createElement('select');
     const selNumero = document.createElement('select');
 
-    selParroquia.innerHTML = '<option value="">Parroquia...</option>';
-    selVia.innerHTML = '<option value="">Vía...</option>';
-    selNumero.innerHTML = '<option value="">Nº...</option>';
+    selParroquia.innerHTML = '<option value="">PARROQUIA...</option>';
+    selVia.innerHTML = '<option value="">VIA...</option>';
+    selNumero.innerHTML = '<option value="">NUM...</option>';
 
     form.appendChild(selParroquia);
     form.appendChild(selVia);
@@ -104,7 +104,11 @@ class SearchLayer extends ol.control.Control {
         const props = f.getProperties();
         const parroquia = props.EibCcl_C_3 || "Otras";
         const via = props.EibCcl_C_2 || "Sin nombre";
-        const numero = props.END_N1_00 || "S/N";
+        var valueLETRA = props.END_L1_00;
+        if (valueLETRA == null) { 
+          valueLETRA = ""; 
+        }
+        const numero = props.END_N1_00 + valueLETRA || "S/N";
 
         if (!this.tree[parroquia]) this.tree[parroquia] = {};
         if (!this.tree[parroquia][via]) this.tree[parroquia][via] = [];

@@ -509,7 +509,7 @@ let measuring = false;
 
 	const measureButton = document.createElement('button');
 	measureButton.className = 'measure-button fas fa-ruler';
-	measureButton.title = 'Measure';
+	measureButton.title = 'Mediciones';
 
 	const measureControl = document.createElement('div');
 	measureControl.className = 'ol-unselectable ol-control measure-control';
@@ -548,7 +548,7 @@ let measuring = false;
         }
         if (measuring) {
             /** @type {string} */
-            var helpMsg = 'Click to start drawing';
+            var helpMsg = 'Click para empezar a medir';
             if (sketch) {
                 var geom = (sketch.getGeometry());
                 if (geom instanceof ol.geom.Polygon) {
@@ -564,14 +564,14 @@ let measuring = false;
     
 
     var selectLabel = document.createElement("label");
-    selectLabel.innerHTML = "&nbsp;Measure:&nbsp;";
+    selectLabel.innerHTML = "&nbsp;Mediciones:&nbsp;";
 
     var typeSelect = document.createElement("select");
     typeSelect.id = "type";
 
     var measurementOption = [
-        { value: "LineString", description: "Length" },
-        { value: "Polygon", description: "Area" }
+        { value: "LineString", description: "Longitud" },
+        { value: "Polygon", description: "Área" }
         ];
     measurementOption.forEach(function (option) {
         var optionElement = document.createElement("option");
@@ -621,7 +621,7 @@ let measuring = false;
 	 * Message to show when the user is drawing a line.
 	 * @type {string}
 	 */
-	var continueLineMsg = 'Click to continue drawing the line';
+	var continueLineMsg = 'Click para continuar dibujando la línea';
 
 
 
@@ -629,7 +629,7 @@ let measuring = false;
 	 * Message to show when the user is drawing a polygon.
 	 * @type {string}
 	 */
-	var continuePolygonMsg = "1click continue, 2click close";
+	var continuePolygonMsg = "Click izquierdo para continuar, doble click para cerrar polígono";
 
 
 	var typeSelect = document.getElementById("type");
@@ -990,7 +990,7 @@ let measuring = false;
   var containers = new Photon.Search({
     resultsHandler: myHandler,
     onSelected: onSelected,
-    placeholder: "Search an address",
+    placeholder: "Buscar una dirección",
     formatResult: formatResult,
     //url: API_URL + "/search/?",
     url: url["Nominatim OSM"],
@@ -1043,7 +1043,7 @@ var searchLayer = new SearchLayer({
     zoom: 19,
     collapsed: true,
     map: map,
-    maxResults: 5,
+    maxResults: 10,
 });
 map.addControl(searchLayer);
 document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
