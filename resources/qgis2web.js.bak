@@ -506,7 +506,7 @@ let measuring = false;
 
 	const measureButton = document.createElement('button');
 	measureButton.className = 'measure-button fas fa-ruler';
-	measureButton.title = 'Medir';
+	measureButton.title = 'Measure';
 
 	const measureControl = document.createElement('div');
 	measureControl.className = 'ol-unselectable ol-control measure-control';
@@ -1000,7 +1000,7 @@ let measuring = false;
     //   );
     // }
   });
-/*
+
   // Add the created DOM element within the map
   //var left = document.getElementById("top-left-container");
   var controlGeocoder = new AddDomControl(containers, {
@@ -1031,7 +1031,7 @@ let measuring = false;
   //var searchbar = document.getElementsByClassName("photon-geocoder-autocomplete ol-unselectable ol-control")[0]
   //left.appendChild(searchbar);
         
-*/
+
 //layer search
 
 var searchLayer = new SearchLayer({

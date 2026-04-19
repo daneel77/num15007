@@ -1,5 +1,5 @@
-function hasClass(el, cls) {
-  return el.className && new RegExp('(\\s|^)' + cls + '(\\s|$)').test(el.className);
+ï»¿function hasClass(el, cls) {
+  return el.className && new RegExp('(\\s|^)' +    cls + '(\\s|$)').test(el.className);
 }
 
 function addClass(elem, className) {
@@ -17,6 +17,7 @@ function removeClass(elem, className) {
     elem.className = newClass.replace(/^\s+|\s+$/g, '');
   }
 }
+
 
 class SearchLayer extends ol.control.Control {
   constructor(optOptions) {
@@ -55,9 +56,9 @@ class SearchLayer extends ol.control.Control {
     const selVia = document.createElement('select');
     const selNumero = document.createElement('select');
 
-    selParroquia.innerHTML = '<option value="">PARROQUIA...</option>';
-    selVia.innerHTML = '<option value="">VIA...</option>';
-    selNumero.innerHTML = '<option value="">NUM...</option>';
+    selParroquia.innerHTML = '<option value="">Parroquia...</option>';
+    selVia.innerHTML = '<option value="">VÃ­a...</option>';
+    selNumero.innerHTML = '<option value="">NÂº...</option>';
 
     form.appendChild(selParroquia);
     form.appendChild(selVia);
@@ -74,8 +75,9 @@ class SearchLayer extends ol.control.Control {
     });
 
     this.map = options.map;
-    this.tree = {}; // Estructura jerárquica para búsqueda instantánea
-
+    this.tree = {}; // Estructura jerÃ¡rquica para bÃºsqueda instantÃ¡nea
+    this.currentSortedList = []
+    
     // Mostrar/Ocultar
     const toggleHideShowInput = () => {
       if (hasClass(form, 'search-layer-collapsed')) {
@@ -87,14 +89,14 @@ class SearchLayer extends ol.control.Control {
 
     button.addEventListener('click', toggleHideShowInput, false);
 
-    // Interacción de selección
+    // InteracciÃ³n de selecciÃ³n
     const select = new ol.interaction.Select({
       layers: [options.layer],
       condition: ol.events.condition.never
     });
     this.map.addInteraction(select);
 
-    // --- LÓGICA DE DATOS ---
+    // --- LÃ“GICA DE DATOS ---
 
     const buildTree = () => {
       const features = source.getFeatures();
@@ -102,13 +104,9 @@ class SearchLayer extends ol.control.Control {
 
       features.forEach(f => {
         const props = f.getProperties();
-        const parroquia = props.EibCcl_C_3 || "Otras";
-        const via = props.EibCcl_C_2 || "Sin nombre";
-        var valueLETRA = props.END_L1_00;
-        if (valueLETRA == null) { 
-          valueLETRA = ""; 
-        }
-        const numero = props.END_N1_00 + valueLETRA || "S/N";
+        const parroquia = props.EibCcl_Callejero_eibEntAgp || "Otras";
+        const via = props.EibCcl_Callejero_eibNomVia || "Sin nombre";
+        const numero = props.END_N1_00 + props.END_L1_00 || "S/N";
 
         if (!this.tree[parroquia]) this.tree[parroquia] = {};
         if (!this.tree[parroquia][via]) this.tree[parroquia][via] = [];
@@ -127,7 +125,7 @@ class SearchLayer extends ol.control.Control {
       });
     };
 
-    // Actualizar árbol cuando los datos carguen
+    // Actualizar Ã¡rbol cuando los datos carguen
     if (source.getState() === 'ready') buildTree();
     source.once('change', () => {
       if (source.getState() === 'ready') buildTree();
@@ -135,8 +133,8 @@ class SearchLayer extends ol.control.Control {
 
     // Eventos de los Selectores
     selParroquia.onchange = () => {
-      selVia.innerHTML = '<option value="">Vía...</option>';
-      selNumero.innerHTML = '<option value="">Nº...</option>';
+      selVia.innerHTML = '<option value="">VÃ­a...</option>';
+      selNumero.innerHTML = '<option value="">NÂº...</option>';
       const p = selParroquia.value;
       if (p && this.tree[p]) {
         Object.keys(this.tree[p]).sort().forEach(v => {
@@ -145,73 +143,56 @@ class SearchLayer extends ol.control.Control {
       }
     };
 
-    selVia.onchange = () => {
-      selNumero.innerHTML = '<option value="">Nº...</option>';
-      const p = selParroquia.value;
-      const v = selVia.value;
-      if (p && v && this.tree[p][v]) {
-        // Orden natural de números (1, 2, 10...)
-        const sortedNums = this.tree[p][v].sort((a, b) => 
-          a.num.toString().localeCompare(b.num.toString(), undefined, {numeric: true})
-        );
-        sortedNums.forEach((item, index) => {
-          selNumero.add(new Option(item.num, index));
-        });
-      }
-    };
+selVia.onchange = () => {
+  selNumero.innerHTML = '<option value="">NÂº...</option>';
+  const p = selParroquia.value;
+  const v = selVia.value;
+  if (p && v && this.tree[p][v]) {
+    // Ordenar
+    const sortedNums = this.tree[p][v].sort((a, b) => 
+      a.num.toString().localeCompare(b.num.toString(), undefined, {numeric: true})
+    );
+    
+    // GUARDAR LA LISTA ORDENADA PARA USARLA LUEGO
+    this.currentSortedList = sortedNums; 
 
-    selNumero.onchange = () => {
-      const p = selParroquia.value;
-      const v = selVia.value;
-      const idx = selNumero.value;
-      if (idx !== "") {
-        const feature = this.tree[p][v][idx].feature;
-        const geom = feature.getGeometry();
-        
-        // Zoom y centrado
-        if (geom.getType() === 'Point') {
-          this.map.getView().animate({
-            center: geom.getCoordinates(),
-            zoom: options.zoom || 19,
-            duration: 1000
-          });
-        } else {
-          this.map.getView().fit(geom.getExtent(), { duration: 1000 });
-        }
+    sortedNums.forEach((item, index) => {
+      selNumero.add(new Option(item.num, index));
+    });
+  }
+};
 
-        // Resaltar
-        select.getFeatures().clear();
-        select.getFeatures().push(feature);
-      }
-    };
+selNumero.onchange = () => {
+  const idx = selNumero.value;
+  if (idx !== "") {
+    // AQUÃ ESTÃ EL CAMBIO: usamos la lista que guardamos
+    const feature = this.currentSortedList[idx].feature; 
+    
+    const geom = feature.getGeometry();
+    
+    // Zoom y centrado
+    if (geom.getType() === 'Point') {
+      this.map.getView().animate({
+        center: geom.getCoordinates(),
+        zoom: 19, // Ajusta a tu gusto
+        duration: 2000
+      });
+    } else {
+      this.map.getView().fit(geom.getExtent(), { duration: 1000 });
+    }
+
+    // Resaltar
+    select.getFeatures().clear();
+    select.getFeatures().push(feature);
+  }
+};
   }
 }
+
 
 
 
 /*
-function hasClass(el, cls) {
-  return el.className && new RegExp('(\\s|^)' +
-    cls + '(\\s|$)').test(el.className);
-}
-
-function addClass(elem, className) {
-  if (!hasClass(elem, className)) {
-    elem.className += ' ' + className;
-  }
-}
-
-function removeClass(elem, className) {
-  var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
-  if (hasClass(elem, className)) {
-    while (newClass.indexOf(' ' + className + ' ') >= 0) {
-      newClass = newClass.replace(' ' + className + ' ', ' ');
-    }
-    elem.className = newClass.replace(/^\s+|\s+$/g, '');
-  }
-}
-
-
 class SearchLayer extends ol.control.Control {
   constructor(optOptions) {
     const horseyComponentRef = { current: null };
