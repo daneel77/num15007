@@ -93,7 +93,7 @@ var lyr_Eib_Lugares_0 = new ol.layer.Vector({
                 style: style_Eib_Lugares_0,
                 popuplayertitle: 'Vías/Lugares A Baña',
                 interactive: true,
-                opacity: 0.60000,
+                opacity: 0.40000,
     title: 'Vías/Lugares A Baña<br />\
     <img src="styles/legend/Eib_Lugares_0_40.png" />  3 - LG / CANLIS<br />\
     <img src="styles/legend/Eib_Lugares_0_57.png" />  5 - LG / CASTRO (O)<br />\
