@@ -195,8 +195,8 @@ var lyr_Eib_Lugares_0 = new ol.layer.Vector({
     <img src="styles/legend/Eib_Lugares_0_28.png" />  131 - LG / VILELA<br />\
     <img src="styles/legend/Eib_Lugares_0_29.png" />  148 - LG / ESPESEDO<br />\
     <img src="styles/legend/Eib_Lugares_0_31.png" />  150 - LG / BUGALLEIRAS<br />\
+    <img src="styles/legend/Eib_Lugares_0_60.png" />  158 - LG / CASTIÑEIRA (A)<br />\
     <img src="styles/legend/Eib_Lugares_0_59.png" />  5003 - LG / VILAR<br />\
-    <img src="styles/legend/Eib_Lugares_0_60.png" />  5004 - LG / CASTIÑEIRA (A)<br />\
     <img src="styles/legend/Eib_Lugares_0_102.png" /> <br />' });
 var group_Eib_Trabajo = new ol.layer.Group({
                                 layers: [lyr_Eib_Lugares_0,],
