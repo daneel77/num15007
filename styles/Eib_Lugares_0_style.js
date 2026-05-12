@@ -6,12 +6,12 @@ function categories_Eib_Lugares_0(feature, value, size, resolution, labelText,
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case ' 100 - LG / PARAXO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(225,77,82,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(17,197,200,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(225,77,82,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(17,197,200,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -19,51 +19,51 @@ function categories_Eib_Lugares_0(feature, value, size, resolution, labelText,
                     break;
 case ' 101 - LG / REIVERDE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(82,120,200,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(94,203,179,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(82,120,200,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(94,203,179,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 102 - LG / RIAL':
+case ' 102 - LG / RIAL (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(148,120,224,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(233,116,186,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(148,120,224,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(233,116,186,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 104 - LG / BAFADUIRA                ':
+case ' 104 - LG / BAFADUIRA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(208,151,37,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(111,232,131,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(208,151,37,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(111,232,131,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 105 - LG / CAMPELO                  ':
+case ' 105 - LG / CAMPELO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(19,236,45,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(118,77,206,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(19,236,45,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(118,77,206,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -71,12 +71,12 @@ case ' 105 - LG / CAMPELO                  ':
                     break;
 case ' 106 - LG / CARBALLEIRA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(193,200,102,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(30,218,39,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(193,200,102,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(30,218,39,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -84,38 +84,38 @@ case ' 106 - LG / CARBALLEIRA (A)':
                     break;
 case ' 107 - LG / COSTA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(205,237,132,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(110,206,121,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(205,237,132,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(110,206,121,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 108 - LG / FERREIROS                ':
+case ' 108 - LG / FERREIROS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(76,95,202,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(112,213,141,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(76,95,202,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(112,213,141,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 109 - LG / FOLGUEIRA                ':
+case ' 109 - LG / FOLGUEIRA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(130,229,87,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(52,204,238,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(130,229,87,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(52,204,238,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -123,25 +123,25 @@ case ' 109 - LG / FOLGUEIRA                ':
                     break;
 case ' 110 - LG / LOUREIRO PEQUENO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(65,217,179,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(105,207,22,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(65,217,179,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(105,207,22,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 111 - LG / MANLE                    ':
+case ' 111 - LG / MANLE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(231,161,96,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(213,107,45,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(231,161,96,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(213,107,45,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -149,51 +149,51 @@ case ' 111 - LG / MANLE                    ':
                     break;
 case ' 112 - LG / RIBA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(170,106,234,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(208,196,31,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(170,106,234,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(208,196,31,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 113 - LG / SAN XOAN                 ':
+case ' 113 - LG / SAN XOAN':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(114,21,236,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(126,162,212,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(114,21,236,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(126,162,212,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 114 - LG / TRECE                    ':
+case ' 114 - LG / TRECE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(101,146,205,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(237,81,237,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(101,146,205,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(237,81,237,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 115 - LG / VIGOBO                   ':
+case ' 115 - LG / VIGOBO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(201,75,64,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(217,160,107,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(201,75,64,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(217,160,107,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -201,12 +201,12 @@ case ' 115 - LG / VIGOBO                   ':
                     break;
 case ' 117 - LG / CRUZ (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(167,53,238,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(96,165,215,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(167,53,238,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(96,165,215,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -214,12 +214,12 @@ case ' 117 - LG / CRUZ (A)':
                     break;
 case ' 118 - LG / CHOUPANA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(49,85,225,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(121,191,229,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(49,85,225,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(121,191,229,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -227,12 +227,12 @@ case ' 118 - LG / CHOUPANA (A)':
                     break;
 case ' 119 - LG / FAXIN':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(166,32,215,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(138,225,50,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(166,32,215,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(138,225,50,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -240,12 +240,12 @@ case ' 119 - LG / FAXIN':
                     break;
 case ' 12 - LG / FAMPOUSA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(213,68,221,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(201,92,132,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(213,68,221,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(201,92,132,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -253,77 +253,77 @@ case ' 12 - LG / FAMPOUSA':
                     break;
 case ' 120 - LG / FAILDE (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(102,220,93,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(161,233,124,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(102,220,93,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(161,233,124,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 121 - LG / FRANCOS                  ':
+case ' 121 - LG / FRANCOS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(215,144,58,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(90,86,204,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(215,144,58,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(90,86,204,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 122 - LG / REGUENGO                 ':
+case ' 122 - LG / REGUENGO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(206,111,67,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(178,131,229,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(206,111,67,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(178,131,229,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 123 - LG / SUEVOS                   ':
+case ' 123 - LG / SUEVOS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(219,107,163,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(218,95,234,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(219,107,163,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(218,95,234,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 125 - LG / MENLLE ABAIXO':
+case ' 125 - LG / MENLLE DE ABAIXO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(66,105,213,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(221,42,179,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(66,105,213,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(221,42,179,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 126 - LG / MENLLE ARRIBA':
+case ' 126 - LG / MENLLE DE ARRIBA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(173,233,90,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(219,71,76,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(173,233,90,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(219,71,76,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -331,25 +331,38 @@ case ' 126 - LG / MENLLE ARRIBA':
                     break;
 case ' 127 - LG / PORTOCHAN':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(145,240,223,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(205,67,157,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(145,240,223,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(205,67,157,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 128 - LG / QUINTANS                 ':
+case ' 128 - LG / QUINTANS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(41,205,183,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(235,195,103,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(41,205,183,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(235,195,103,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case ' 129 - LG / TROITOSENDE':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(186,213,34,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(186,213,34,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -357,12 +370,12 @@ case ' 128 - LG / QUINTANS                 ':
                     break;
 case ' 130 - LG / VILACOBA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(192,209,66,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(96,110,202,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(192,209,66,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(96,110,202,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -370,12 +383,25 @@ case ' 130 - LG / VILACOBA':
                     break;
 case ' 131 - LG / VILELA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(144,136,239,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(43,214,197,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(144,136,239,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(43,214,197,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case ' 147 - LG / MOLDES':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(52,173,225,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(52,173,225,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -383,12 +409,12 @@ case ' 131 - LG / VILELA':
                     break;
 case ' 148 - LG / ESPESEDO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(19,207,213,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(90,221,64,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(19,207,213,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(90,221,64,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -396,25 +422,77 @@ case ' 148 - LG / ESPESEDO':
                     break;
 case ' 15 - LG / GUENDE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(91,227,49,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(50,35,212,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(91,227,49,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(50,35,212,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 150 - LG / BUGALLEIRAS':
+case ' 153 - LG / FOXAS (AS)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(50,222,78,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(223,31,92,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(50,222,78,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(223,31,92,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case ' 154 - LG / VILAR':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(186,226,40,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(186,226,40,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case ' 155 - LG / CHANS':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(118,227,192,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(118,227,192,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case ' 156 - LG / EIROA':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(198,201,115,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(198,201,115,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case ' 158 - LG / CASTIÑEIRA (A)':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(110,229,171,0.494)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(110,229,171,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -422,12 +500,12 @@ case ' 150 - LG / BUGALLEIRAS':
                     break;
 case ' 16 - LG / XASOSO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(222,124,145,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(224,30,169,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(222,124,145,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(224,30,169,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -435,12 +513,12 @@ case ' 16 - LG / XASOSO':
                     break;
 case ' 17 - LG / LIÑARES':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(222,153,112,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(106,217,213,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(222,153,112,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(106,217,213,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -448,12 +526,12 @@ case ' 17 - LG / LIÑARES':
                     break;
 case ' 19 - LG / PAREDES':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(184,121,215,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(211,76,18,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(184,121,215,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(211,76,18,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -461,12 +539,12 @@ case ' 19 - LG / PAREDES':
                     break;
 case ' 21 - LG / SALVANDE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(59,203,150,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(230,156,51,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(59,203,150,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(230,156,51,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -474,12 +552,12 @@ case ' 21 - LG / SALVANDE':
                     break;
 case ' 22 - LG / SAN SALVADOR':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(35,223,79,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(153,231,51,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(35,223,79,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(153,231,51,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -487,12 +565,12 @@ case ' 22 - LG / SAN SALVADOR':
                     break;
 case ' 25 - LG / SEÑOR':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(187,238,142,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(128,227,128,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(187,238,142,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(128,227,128,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -500,12 +578,12 @@ case ' 25 - LG / SEÑOR':
                     break;
 case ' 26 - LG / VESIA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(239,62,236,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(210,125,162,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(239,62,236,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(210,125,162,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -513,25 +591,25 @@ case ' 26 - LG / VESIA':
                     break;
 case ' 27 - LG / VILARNOVO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(234,19,195,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(74,212,152,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(234,19,195,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(74,212,152,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 3 - LG / CANLIS                   ':
+case ' 3 - LG / CANLIS     ':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(138,98,202,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(19,120,208,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(138,98,202,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(19,120,208,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -539,12 +617,12 @@ case ' 3 - LG / CANLIS                   ':
                     break;
 case ' 30 - LG / CHANTADA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(45,211,161,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(198,129,213,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(45,211,161,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(198,129,213,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -552,12 +630,12 @@ case ' 30 - LG / CHANTADA':
                     break;
 case ' 31 - LG / SAN CIBRAN':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(36,153,211,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(83,238,197,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(36,153,211,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(83,238,197,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -565,12 +643,12 @@ case ' 31 - LG / SAN CIBRAN':
                     break;
 case ' 32 - LG / TARROEIRA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(217,49,105,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(53,205,182,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(217,49,105,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(53,205,182,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -578,12 +656,12 @@ case ' 32 - LG / TARROEIRA (A)':
                     break;
 case ' 34 - LG / ARZON':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(235,76,174,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(101,197,204,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(235,76,174,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(101,197,204,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -591,12 +669,12 @@ case ' 34 - LG / ARZON':
                     break;
 case ' 35 - LG / CORES':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(189,75,221,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(223,187,27,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(189,75,221,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(223,187,27,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -604,12 +682,12 @@ case ' 35 - LG / CORES':
                     break;
 case ' 36 - LG / EMES':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(215,105,116,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(150,208,26,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(215,105,116,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(150,208,26,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -617,12 +695,12 @@ case ' 36 - LG / EMES':
                     break;
 case ' 37 - LG / LAMEIRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(132,233,60,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(229,50,137,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(132,233,60,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(229,50,137,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -630,12 +708,12 @@ case ' 37 - LG / LAMEIRO (O)':
                     break;
 case ' 38 - LG / SEOANE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(122,203,111,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(154,14,210,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(122,203,111,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(154,14,210,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -643,12 +721,12 @@ case ' 38 - LG / SEOANE':
                     break;
 case ' 40 - LG / BARRO DE ABAIXO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(207,86,45,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(228,226,99,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(207,86,45,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(228,226,99,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -656,25 +734,12 @@ case ' 40 - LG / BARRO DE ABAIXO (O)':
                     break;
 case ' 41 - LG / BARRO DE ARRIBA (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(27,216,125,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(191,40,202,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(27,216,125,0.494)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case ' 42 - LG / CAMPO (O)':
-                    return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(70,75,215,0.494)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(70,75,215,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(191,40,202,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -682,12 +747,12 @@ case ' 42 - LG / CAMPO (O)':
                     break;
 case ' 43 - LG / SINO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(171,231,59,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(102,126,224,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(171,231,59,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(102,126,224,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -695,12 +760,12 @@ case ' 43 - LG / SINO (O)':
                     break;
 case ' 45 - LG / CABANAS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(235,78,167,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(101,13,216,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(235,78,167,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(101,13,216,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -708,12 +773,12 @@ case ' 45 - LG / CABANAS':
                     break;
 case ' 46 - LG / GUIMARANS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(230,209,133,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(142,107,201,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(230,209,133,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(142,107,201,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -721,12 +786,12 @@ case ' 46 - LG / GUIMARANS':
                     break;
 case ' 47 - LG / IGREXA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(40,217,49,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(199,211,90,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(40,217,49,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(199,211,90,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -734,12 +799,12 @@ case ' 47 - LG / IGREXA (A)':
                     break;
 case ' 48 - LG / PAZO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(24,17,235,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(228,112,83,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(24,17,235,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(228,112,83,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -747,12 +812,12 @@ case ' 48 - LG / PAZO (O)':
                     break;
 case ' 5 - LG / CASTRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(231,75,135,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(69,168,201,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(231,75,135,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(69,168,201,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -760,38 +825,12 @@ case ' 5 - LG / CASTRO (O)':
                     break;
 case ' 50 - LG / AGROMAIOR':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(218,121,212,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(37,203,103,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(218,121,212,0.494)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case ' 5003 - LG / VILAR':
-                    return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(21,199,231,0.494)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(21,199,231,0.494)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case ' 5004 - LG / CASTIÑEIRA (A)':
-                    return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(193,213,125,0.494)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(193,213,125,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(37,203,103,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -799,12 +838,12 @@ case ' 5004 - LG / CASTIÑEIRA (A)':
                     break;
 case ' 51 - LG / BARREIROS (OS)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(169,103,223,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(153,207,67,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(169,103,223,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(153,207,67,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -812,12 +851,12 @@ case ' 51 - LG / BARREIROS (OS)':
                     break;
 case ' 52 - LG / CORNEIRA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(202,67,128,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(102,200,64,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(202,67,128,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(102,200,64,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -825,12 +864,12 @@ case ' 52 - LG / CORNEIRA':
                     break;
 case ' 54 - LG / FERRACES':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(66,222,239,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(130,109,213,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(66,222,239,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(130,109,213,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -838,12 +877,12 @@ case ' 54 - LG / FERRACES':
                     break;
 case ' 55 - LG / OUTEIRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(92,226,18,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(216,198,80,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(92,226,18,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(216,198,80,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -851,12 +890,12 @@ case ' 55 - LG / OUTEIRO (O)':
                     break;
 case ' 56 - LG / PIOLLA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(109,164,209,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(216,81,108,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(109,164,209,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(216,81,108,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -864,12 +903,12 @@ case ' 56 - LG / PIOLLA (A)':
                     break;
 case ' 57 - LG / PONTE CORNEIRA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(232,46,74,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(223,67,215,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(232,46,74,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(223,67,215,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -877,12 +916,12 @@ case ' 57 - LG / PONTE CORNEIRA':
                     break;
 case ' 58 - LG / VILANOVA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(138,224,91,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(187,110,228,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(138,224,91,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(187,110,228,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -890,12 +929,12 @@ case ' 58 - LG / VILANOVA':
                     break;
 case ' 59 - LG / VILAR DE CERDEIRAS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(232,22,18,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(128,205,106,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(232,22,18,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(128,205,106,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -903,12 +942,12 @@ case ' 59 - LG / VILAR DE CERDEIRAS':
                     break;
 case ' 60 - LG / VILAR DE CIMA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(240,66,112,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(231,65,154,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(240,66,112,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(231,65,154,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -916,12 +955,12 @@ case ' 60 - LG / VILAR DE CIMA':
                     break;
 case ' 61 - LG / VILARIÑO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(116,215,150,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(221,182,55,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(116,215,150,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(221,182,55,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -929,12 +968,12 @@ case ' 61 - LG / VILARIÑO':
                     break;
 case ' 63 - LG / HEDREIRA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(122,75,224,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(60,105,239,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(122,75,224,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(60,105,239,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -942,12 +981,12 @@ case ' 63 - LG / HEDREIRA (A)':
                     break;
 case ' 64 - LG / ERMIDA (A)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(105,178,204,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(229,131,156,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(105,178,204,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(229,131,156,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -955,12 +994,12 @@ case ' 64 - LG / ERMIDA (A)':
                     break;
 case ' 65 - LG / GOSENDE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(220,189,35,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(110,142,217,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(220,189,35,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(110,142,217,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -968,25 +1007,25 @@ case ' 65 - LG / GOSENDE':
                     break;
 case ' 67 - LG / ALDE (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(218,46,195,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(209,51,180,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(218,46,195,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(209,51,180,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 68 - LG / ESTIBADIÑA':
+case ' 68 - LG / ESTIVADIÑA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(211,188,13,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(39,200,31,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(211,188,13,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(39,200,31,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -994,12 +1033,12 @@ case ' 68 - LG / ESTIBADIÑA':
                     break;
 case ' 69 - LG / FIOPANS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(31,238,90,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(232,152,139,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(31,238,90,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(232,152,139,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1007,12 +1046,12 @@ case ' 69 - LG / FIOPANS':
                     break;
 case ' 70 - LG / TROITOMIL':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(47,136,224,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(184,133,218,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(47,136,224,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(184,133,218,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1020,12 +1059,12 @@ case ' 70 - LG / TROITOMIL':
                     break;
 case ' 71 - LG / VILAR DE SUSO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(238,17,56,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(224,36,205,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(238,17,56,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(224,36,205,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1033,12 +1072,12 @@ case ' 71 - LG / VILAR DE SUSO':
                     break;
 case ' 73 - LG / CANTALARRANA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(41,144,207,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(150,67,223,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(41,144,207,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(150,67,223,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1046,12 +1085,12 @@ case ' 73 - LG / CANTALARRANA':
                     break;
 case ' 74 - LG / CASTRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(200,62,156,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(220,74,69,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(200,62,156,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(220,74,69,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1059,12 +1098,12 @@ case ' 74 - LG / CASTRO (O)':
                     break;
 case ' 75 - LG / LAÑAS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(228,104,197,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(113,124,239,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(228,104,197,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(113,124,239,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1072,12 +1111,12 @@ case ' 75 - LG / LAÑAS':
                     break;
 case ' 76 - LG / MEIMENDRE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(238,228,30,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(70,231,49,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(238,228,30,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(70,231,49,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1085,12 +1124,12 @@ case ' 76 - LG / MEIMENDRE':
                     break;
 case ' 77 - LG / MUNDRIS':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(203,116,94,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(79,213,162,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(203,116,94,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(79,213,162,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1098,12 +1137,12 @@ case ' 77 - LG / MUNDRIS':
                     break;
 case ' 78 - LG / PROUSOR':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(94,239,227,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(29,182,206,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(94,239,227,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(29,182,206,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1111,12 +1150,12 @@ case ' 78 - LG / PROUSOR':
                     break;
 case ' 79 - LG / VALIÑA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(95,201,157,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(49,18,226,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(95,201,157,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(49,18,226,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1124,25 +1163,25 @@ case ' 79 - LG / VALIÑA':
                     break;
 case ' 80 - LG / VILAR DA TORRE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(72,230,146,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(193,226,104,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(72,230,146,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(193,226,104,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 82 - LG / OUTEIRO':
+case ' 82 - LG / OUTEIRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(184,91,200,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(235,35,65,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(184,91,200,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(235,35,65,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1150,12 +1189,12 @@ case ' 82 - LG / OUTEIRO':
                     break;
 case ' 83 - LG / QUINTEIRO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(34,109,230,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(109,151,224,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(34,109,230,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(109,151,224,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1163,12 +1202,12 @@ case ' 83 - LG / QUINTEIRO':
                     break;
 case ' 84 - LG / VILAR':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(207,149,63,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(211,180,122,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(207,149,63,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(211,180,122,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1176,12 +1215,12 @@ case ' 84 - LG / VILAR':
                     break;
 case ' 86 - LG / BUCHAIN':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(128,206,228,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(228,160,112,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(128,206,228,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(228,160,112,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1189,12 +1228,12 @@ case ' 86 - LG / BUCHAIN':
                     break;
 case ' 87 - LG / SEILAN (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(223,51,24,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(85,147,214,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(223,51,24,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(85,147,214,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1202,12 +1241,12 @@ case ' 87 - LG / SEILAN (O)':
                     break;
 case ' 88 - LG / DUOMES DE ABAIXO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(189,233,138,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(220,98,108,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(189,233,138,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(220,98,108,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1215,12 +1254,12 @@ case ' 88 - LG / DUOMES DE ABAIXO':
                     break;
 case ' 89 - LG / DUOMES DE ARRIBA':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(70,35,212,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(35,240,127,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(70,35,212,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(35,240,127,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1228,12 +1267,12 @@ case ' 89 - LG / DUOMES DE ARRIBA':
                     break;
 case ' 90 - LG / NANTON':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(217,217,110,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(224,35,18,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(217,217,110,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(224,35,18,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1241,25 +1280,25 @@ case ' 90 - LG / NANTON':
                     break;
 case ' 91 - LG / RUCHEIRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(205,173,92,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(24,227,71,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(205,173,92,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(24,227,71,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case ' 92 - LG / SAN MAMEDE':
+case ' 92 - LG / SANAMEDE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(176,205,46,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(88,90,218,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(176,205,46,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(88,90,218,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1267,12 +1306,12 @@ case ' 92 - LG / SAN MAMEDE':
                     break;
 case ' 94 - LG / BUSTO':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(52,214,15,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(230,179,120,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(52,214,15,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(230,179,120,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1280,12 +1319,12 @@ case ' 94 - LG / BUSTO':
                     break;
 case ' 95 - LG / CANLE (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(23,230,23,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(49,202,100,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(23,230,23,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(49,202,100,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1293,12 +1332,12 @@ case ' 95 - LG / CANLE (O)':
                     break;
 case ' 96 - LG / COTOBADE':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(90,101,229,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(234,107,65,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(90,101,229,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(234,107,65,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1306,12 +1345,12 @@ case ' 96 - LG / COTOBADE':
                     break;
 case ' 97 - LG / COUTO CARBALLO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(138,121,235,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(119,217,54,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(138,121,235,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(119,217,54,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1319,12 +1358,12 @@ case ' 97 - LG / COUTO CARBALLO (O)':
                     break;
 case ' 98 - LG / CRUCEIRO (O)':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(93,225,223,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(185,101,211,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(93,225,223,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(185,101,211,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -1332,12 +1371,12 @@ case ' 98 - LG / CRUCEIRO (O)':
                     break;
 default:
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(226,117,33,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: [19.0,3.8], lineCap: 'butt', lineJoin: 'miter', width: 3.8}),fill: new ol.style.Fill({color: 'rgba(187,198,227,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(226,117,33,0.494)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.494)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.508}),fill: new ol.style.Fill({color: 'rgba(187,198,227,0.494)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
