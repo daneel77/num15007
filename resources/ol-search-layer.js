@@ -26,7 +26,7 @@ class SearchLayer extends ol.control.Control {
       throw new Error('Missing layer in options');
     }
 
-    // Detect vector source
+    // 1. Detectar vector source
     let source;
     if (options.layer instanceof ol.layer.Image &&
         options.layer.getSource() instanceof ol.source.ImageVector) {
@@ -38,13 +38,22 @@ class SearchLayer extends ol.control.Control {
       source = source.getSource();
     }
 
-    // Elementos del Control
+    // 2. IMPORTANTE: Declaramos map y select al principio para que Horsey pueda usarlos
+    const map = options.map;
+    const select = new ol.interaction.Select({
+      layers: [options.layer],
+      condition: ol.events.condition.never
+    });
+    if (map) {
+      map.addInteraction(select);
+    }
+
+    // Elementos del Control HTML
     const button = document.createElement('button');
     button.type = 'button';
 
     const form = document.createElement('form');
     form.setAttribute('id', 'ol-search-form');
-    // Clase original para mantener compatibilidad con tus estilos CSS
     const defaultFormClass = ['search-layer-input-search'];
     if (optOptions.collapsed) {
       defaultFormClass.push('search-layer-collapsed');
@@ -57,28 +66,97 @@ class SearchLayer extends ol.control.Control {
     const selNumero = document.createElement('select');
 
     selParroquia.innerHTML = '<option value="">Parroquia...</option>';
+    selParroquia.add(new Option("TODAS LAS PARROQUIAS", "TODAS"));
+
     selVia.innerHTML = '<option value="">Vía...</option>';
     selNumero.innerHTML = '<option value="">Nº...</option>';
 
     form.appendChild(selParroquia);
     form.appendChild(selVia);
     form.appendChild(selNumero);
+    
+    // --- NUEVA BÚSQUEDA POR REFERENCIA CATASTRAL ---
+    const inputRC = document.createElement('input');
+    inputRC.type = 'text';
+    inputRC.id = 'search-rc';
+    inputRC.placeholder = 'Buscar Ref. Catastral...';
+    inputRC.style.width = '100%';
+    inputRC.style.marginTop = '6px';
+    form.appendChild(inputRC);
 
     const element = document.createElement('div');
     element.className = 'search-layer ol-unselectable ol-control';
     element.appendChild(button);
     element.appendChild(form);
 
+    // Inicializar clase base de OpenLayers
     super({
       element: element,
       target: options.target
     });
 
-    this.map = options.map;
-    this.tree = {}; // Estructura jerárquica para búsqueda instantánea
-    this.currentSortedList = []
-    
-    // Mostrar/Ocultar
+    this.map = map;
+    this.tree = {}; 
+    this.currentSortedList = [];
+
+    // --- MOTOR HORSEY PARA REFERENCIA CATASTRAL ---
+    const inicializarHorseyRC = () => {
+      // Auto-detección inteligente del nombre de columna (REFCAT, refcat, Refcat...)
+      let columnaCatastro = 'REFCAT';
+      const features = source.getFeatures();
+      if (features.length > 0) {
+        const props = features[0].getProperties();
+        const claves = Object.keys(props);
+        const claveEncontrada = claves.find(k => k.toLowerCase() === 'refcat' || k.toLowerCase() === 'rc');
+        if (claveEncontrada) columnaCatastro = claveEncontrada;
+      }
+
+      horsey(inputRC, {
+        source: [{
+          list: source.getFeatures().map((el, i) => {
+            if (el.getId() === undefined) el.setId(i);
+            const val = el.get(columnaCatastro) || '';
+            return {
+              text: val.toString().trim(), 
+              value: el.getId()
+            };
+          }).filter(item => item.text !== '') 
+        }],
+        getText: 'text',
+        getValue: 'value',
+        limit: 5, 
+        filter: function (query, selection) {
+          if (query.length < 4) return false; // Mínimo 4 caracteres para arrancar
+          return selection.text.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+        },
+        predictNextSearch: function(info) {
+          const feat = source.getFeatureById(info.selection.value);
+          if (feat && map) {
+          	
+          	selParroquia.value = '';
+              selVia.innerHTML = '<option value="">Vía...</option>';
+              selNumero.innerHTML = '<option value="">Nº...</option>';
+          	
+            const view = map.getView();
+            view.fit(feat.getGeometry().getExtent(), {
+              size: map.getSize(),
+              maxZoom: 19 
+            });
+            
+            select.getFeatures().clear();
+            select.getFeatures().push(feat);
+          }
+        }
+      });
+    };
+
+    // Lanzar Horsey cuando la capa esté lista
+    if (source.getState() === 'ready') inicializarHorseyRC();
+    source.on('change', () => {
+      if (source.getState() === 'ready') inicializarHorseyRC();
+    });
+
+    // Mostrar/Ocultar panel
     const toggleHideShowInput = () => {
       if (hasClass(form, 'search-layer-collapsed')) {
         removeClass(form, 'search-layer-collapsed');
@@ -86,18 +164,9 @@ class SearchLayer extends ol.control.Control {
         addClass(form, 'search-layer-collapsed');
       }
     };
-
     button.addEventListener('click', toggleHideShowInput, false);
 
-    // Interacción de selección
-    const select = new ol.interaction.Select({
-      layers: [options.layer],
-      condition: ol.events.condition.never
-    });
-    this.map.addInteraction(select);
-
-    // --- LÓGICA DE DATOS ---
-
+    // --- LÓGICA DEL ÁRBOL JERÁRQUICO (PARROQUIAS Y VÍAS) ---
     const buildTree = () => {
       const features = source.getFeatures();
       this.tree = {};
@@ -105,233 +174,106 @@ class SearchLayer extends ol.control.Control {
       features.forEach(f => {
         const props = f.getProperties();
         const parroquia = props.EibCcl_Callejero_eibEntAgp || "Otras";
-        const via = props.EibCcl_Callejero_eibNomVia || "Sin nombre";
-        const numero = props.END_N1_00 + props.END_L1_00 || "S/N";
+        const via = (props.EibCcl_Callejero_eibTipVia || "") + "/ " + (props.EibCcl_Callejero_eibNomVia || "Sin nombre");
+        const numero = (props.END_N1_00 || "") + (props.END_L1_00 || "");
 
         if (!this.tree[parroquia]) this.tree[parroquia] = {};
         if (!this.tree[parroquia][via]) this.tree[parroquia][via] = [];
         
         this.tree[parroquia][via].push({
-          num: numero,
+          num: numero || "S/N",
           feature: f
         });
       });
 
-      // Rellenar parroquias inicialmente
-      const sortedParroquias = Object.keys(this.tree).sort();
-      sortedParroquias.forEach(p => {
-        const opt = new Option(p, p);
-        selParroquia.add(opt);
+      selParroquia.innerHTML = '<option value="">Parroquia...</option>';
+      selParroquia.add(new Option("TODAS LAS PARROQUIAS", "TODAS"));
+      Object.keys(this.tree).sort().forEach(p => {
+        selParroquia.add(new Option(p, p));
       });
     };
 
-    // Actualizar árbol cuando los datos carguen
     if (source.getState() === 'ready') buildTree();
-    source.once('change', () => {
+    source.on('change', () => {
       if (source.getState() === 'ready') buildTree();
     });
 
-    // Eventos de los Selectores
+    // Eventos de interacción de los selectores
     selParroquia.onchange = () => {
+    	inputRC.value = '';
       selVia.innerHTML = '<option value="">Vía...</option>';
       selNumero.innerHTML = '<option value="">Nº...</option>';
+      
       const p = selParroquia.value;
-      if (p && this.tree[p]) {
-        Object.keys(this.tree[p]).sort().forEach(v => {
-          selVia.add(new Option(v, v));
+      if (!p) return;
+
+      let viasDisponibles = [];
+      if (p === "TODAS") {
+        Object.keys(this.tree).forEach(parroquiaKey => {
+          Object.keys(this.tree[parroquiaKey]).forEach(viaKey => {
+            if (!viasDisponibles.includes(viaKey)) {
+              viasDisponibles.push(viaKey);
+            }
+          });
+        });
+      } else if (this.tree[p]) {
+        viasDisponibles = Object.keys(this.tree[p]);
+      }
+
+      viasDisponibles.sort().forEach(v => {
+        selVia.add(new Option(v, v));
+      });
+    };
+
+    selVia.onchange = () => {
+      selNumero.innerHTML = '<option value="">Nº...</option>';
+      const p = selParroquia.value;
+      const v = selVia.value;
+      
+      if (!v) return;
+
+      let numerosAcumulados = [];
+      if (p === "TODAS") {
+        Object.keys(this.tree).forEach(parroquiaKey => {
+          if (this.tree[parroquiaKey][v]) {
+            numerosAcumulados = numerosAcumulados.concat(this.tree[parroquiaKey][v]);
+          }
+        });
+      } else if (p && this.tree[p] && this.tree[p][v]) {
+        numerosAcumulados = this.tree[p][v];
+      }
+
+      if (numerosAcumulados.length > 0) {
+        const sortedNums = numerosAcumulados.sort((a, b) => 
+          a.num.toString().localeCompare(b.num.toString(), undefined, {numeric: true})
+        );
+        
+        this.currentSortedList = sortedNums; 
+        sortedNums.forEach((item, index) => {
+          selNumero.add(new Option(item.num, index));
         });
       }
     };
 
-selVia.onchange = () => {
-  selNumero.innerHTML = '<option value="">Nº...</option>';
-  const p = selParroquia.value;
-  const v = selVia.value;
-  if (p && v && this.tree[p][v]) {
-    // Ordenar
-    const sortedNums = this.tree[p][v].sort((a, b) => 
-      a.num.toString().localeCompare(b.num.toString(), undefined, {numeric: true})
-    );
-    
-    // GUARDAR LA LISTA ORDENADA PARA USARLA LUEGO
-    this.currentSortedList = sortedNums; 
-
-    sortedNums.forEach((item, index) => {
-      selNumero.add(new Option(item.num, index));
-    });
-  }
-};
-
-selNumero.onchange = () => {
-  const idx = selNumero.value;
-  if (idx !== "") {
-    // AQUÍ ESTÁ EL CAMBIO: usamos la lista que guardamos
-    const feature = this.currentSortedList[idx].feature; 
-    
-    const geom = feature.getGeometry();
-    
-    // Zoom y centrado
-    if (geom.getType() === 'Point') {
-      this.map.getView().animate({
-        center: geom.getCoordinates(),
-        zoom: 19, // Ajusta a tu gusto
-        duration: 2000
-      });
-    } else {
-      this.map.getView().fit(geom.getExtent(), { duration: 1000 });
-    }
-
-    // Resaltar
-    select.getFeatures().clear();
-    select.getFeatures().push(feature);
-  }
-};
-  }
-}
-
-
-
-
-/*
-class SearchLayer extends ol.control.Control {
-  constructor(optOptions) {
-    const horseyComponentRef = { current: null };
-    const selectRef = { current: null };
-
-    const options = optOptions || {};
-    if (!options.layer) {
-      throw new Error('Missing layer in options');
-    }
-	
-	options.maxResults = (optOptions && typeof optOptions.maxResults === 'number') 
-	  ? optOptions.maxResults 
-	  : 10;
-
-    options.map = optOptions.map;
-    options.colName = optOptions.colName;
-
-    // Detect vector source
-    let source;
-    if (options.layer instanceof ol.layer.Image &&
-        options.layer.getSource() instanceof ol.source.ImageVector) {
-      source = options.layer.getSource().getSource();
-    } else if (options.layer instanceof ol.layer.Vector) {
-      source = options.layer.getSource();
-    }
-	if (source instanceof ol.source.Cluster) {
-	  source = source.getSource();
-	}
-
-    // Create button
-    const button = document.createElement('button');
-    const toggleHideShowInput = () => {
-      const input = document.querySelector('form > .search-layer-input-search');
-      if (hasClass(input, 'search-layer-collapsed')) {
-        removeClass(input, 'search-layer-collapsed');
-      } else {
-        input.value = '';
-        addClass(input, 'search-layer-collapsed');
-        if (horseyComponentRef.current) {
-          horseyComponentRef.current.hide();
+    selNumero.onchange = () => {
+      const idx = selNumero.value;
+      if (idx !== "" && this.map) {
+        const feature = this.currentSortedList[idx].feature; 
+        const geom = feature.getGeometry();
+        
+        if (geom.getType() === 'Point') {
+          this.map.getView().animate({
+            center: geom.getCoordinates(),
+            zoom: 19, 
+            duration: 2000
+          });
+        } else {
+          this.map.getView().fit(geom.getExtent(), { duration: 1000 });
         }
-        if (selectRef.current) {
-          selectRef.current.getFeatures().clear();
-        }
+
+        select.getFeatures().clear();
+        select.getFeatures().push(feature);
       }
     };
-
-    button.addEventListener('click', toggleHideShowInput, false);
-    button.addEventListener('touchstart', toggleHideShowInput, false);
-
-    // Create input
-    const form = document.createElement('form');
-    form.setAttribute('id', 'random');
-    form.onsubmit = undefined;
-
-    const input = document.createElement('input');
-    input.setAttribute('id', 'ol-search-input');
-    const defaultInputClass = ['search-layer-input-search'];
-    if (optOptions.collapsed) {
-      defaultInputClass.push('search-layer-collapsed');
-    }
-    input.setAttribute('class', defaultInputClass.join(' '));
-    input.setAttribute('placeholder', 'Search ...');
-    input.setAttribute('type', 'text');
-    form.appendChild(input);
-
-    // Build control element
-    const element = document.createElement('div');
-    element.className = 'search-layer ol-unselectable ol-control';
-    element.appendChild(button);
-    element.appendChild(form);
-
-    // Initialize base class
-    super({
-      element: element,
-      target: options.target
-    });
-
-    // Create select interaction
-    const select = new ol.interaction.Select({
-      id: options.selectId || 'defaultSearchLayer',
-      layers: [options.layer],
-      condition: ol.events.condition.never
-    });
-
-    selectRef.current = select;
-
-    const map = options.map;
-    map.addInteraction(select);
-
-    // Setup horsey autocomplete
-    const typesToZoomToExtent = [
-      'MultiPoint', 'LineString', 'MultiLineString', 'MultiPolygon', 'Polygon'
-    ];
-    const typesToZoomToCenterAndZoom = ['Point'];
-
-    const returnHorsey = (input, source, map, select, options) => {
-      return horsey(input, {
-        source: [{
-          list: source.getFeatures().map((el, i) => {
-            if (el.getId() === undefined) {
-              el.setId(i);
-            }
-            return {
-              text: el.get(options.colName),
-              value: el.getId()
-            };
-          })
-        }],
-        getText: 'text',
-        getValue: 'value',
-		limit: options.maxResults,
-        predictNextSearch: function(info) {
-          const feat = source.getFeatureById(info.selection.value);
-          const featType = feat.getGeometry().getType();
-
-          if (typesToZoomToCenterAndZoom.includes(featType)) {
-            const newCenter = ol.extent.getCenter(feat.getGeometry().getExtent());
-            map.getView().setCenter(newCenter);
-            map.getView().setZoom(options.zoom || 12);
-          } else if (typesToZoomToExtent.includes(featType)) {
-            map.getView().fit(feat.getGeometry().getExtent(), map.getSize());
-          }
-
-          select.getFeatures().clear();
-          select.getFeatures().push(feat);
-        }
-      });
-    };
-
-    if (source.getState() === 'ready') {
-      horseyComponentRef.current = returnHorsey(input, source, map, select, options);
-    }
-
-    source.once('change', () => {
-      if (source.getState() === 'ready') {
-        horseyComponentRef.current = returnHorsey(input, source, map, select, options);
-      }
-    });
   }
 }
-*/

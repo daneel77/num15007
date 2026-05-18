@@ -1047,6 +1047,19 @@ document.getElementsByClassName('search-layer')[0].getElementsByTagName('button'
 document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
     
 
+// 1. Traducir el placeholder del buscador original que venía en inglés
+document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Buscar Parroquia, vía...';
+
+// 2. Sincronizar el comportamiento de apertura/cierre del panel con el nuevo buscador
+document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].addEventListener('click', function() {
+    var inputRC = document.getElementById('search-rc');
+    if (inputRC) {
+        // Le damos un pequeño retraso para esperar a que la animación de qgis2web abra el panel
+        setTimeout(function() { inputRC.focus(); }, 200); 
+    }
+});
+
+
 //scalebar
 
 
