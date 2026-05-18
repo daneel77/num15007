@@ -44,11 +44,56 @@ var style_EibCcl_Numeracion_Catastro_3 = function(feature, resolution){
         labelText = String(valueNUM + valueLETRA);
     }
     
+switch (labelText.length) {
+    case 1:
+        console.log("La cadena tiene 1 carácter");
+        // Tu código aquí
+        offsetX=10;
+        offsetY=-3;
+        break;
+        
+    case 2:
+        console.log("La cadena tiene 2 caracteres");
+        // Tu código aquí
+        offsetX=13;
+        offsetY=-3;
+        break;
+        
+    case 3:
+        console.log("La cadena tiene 3 caracteres");
+        // Tu código aquí
+        offsetX=17;
+        offsetY=-3;
+        break;
+        
+    case 4:
+        console.log("La cadena tiene 4 caracteres");
+        // Tu código aquí
+        offsetX=21;
+        offsetY=-3;
+        break;
+        
+    case 5:
+        console.log("La cadena tiene 5 caracteres");
+        // Tu código aquí
+        offsetX=25;
+        offsetY=-3;
+        break;
+        
+    default:
+        console.log("La cadena es vacía o tiene más de 5 caracteres");
+        // Código opcional por si no cumple ninguna de las anteriores
+        break;
+}
+
+
+    
+    
         var style = [ 
         new ol.style.Style({
         image: new ol.style.Circle({
             radius: 10,
-            displacement: [10, -3],
+            displacement: [offsetX, offsetY],
             stroke: new ol.style.Stroke({
             color: circleFill,
             width: 3.5
